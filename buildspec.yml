@@ -4,8 +4,7 @@ phases:
   install:
     commands:
       - aws s3 rm s3://angularapplicationcjunior --recursive
-      - aws s3 cp index.html s3://angularapplicationcjunior
-      - aws s3 put-object-acl --bucket angularapplicationcjunior --key index.html --acl public-read
+      - aws s3 cp index.html s3://angularapplicationcjunior --acl public-read
 
 artifacts:
   files:
