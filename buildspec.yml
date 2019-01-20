@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - aws s3 rm s3://angularapplicationcjunior --recursive
-      - aws s3 cp index.html s3://angularapplicationcjunior --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+      - aws s3 cp index.html s3://angularapplicationcjunior
 
 artifacts:
   files:
